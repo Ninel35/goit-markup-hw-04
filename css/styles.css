@@ -145,6 +145,8 @@ ul {
 }
 .section-team {
   background-color: var(--backgroundButton);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-card {
@@ -272,10 +274,7 @@ img {
 .our-works {
   width: calc((100% - 48px) / 3);
 }
-.section-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .team {
   display: flex;
   flex-direction: row;
@@ -348,7 +347,18 @@ img {
 }
 
 .customers-list {
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+
   gap: 24px;
+}
+.section-customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team-customers {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+  width: 168px;
+  height: 88px;
 }
