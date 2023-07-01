@@ -116,6 +116,10 @@ ul {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-filters:hover,
 .portfolio-filters:focus {
@@ -280,6 +284,7 @@ img {
 .container-nav {
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-content {
   height: 600px;
@@ -290,6 +295,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/index/people-office.png);
+
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -364,14 +370,16 @@ img {
   row-gap: 48px;
 }
 .portfolio-cards {
+  display: block;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-cards:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0%);
 }
 .project-name {
   padding: 32px 16px;
@@ -397,6 +405,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list {
@@ -458,6 +467,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media .link:hover,
 .social-media .link:focus {
@@ -507,12 +517,13 @@ img {
   transform: translateY(0);
 }
 .card-overlay-text {
-  color: #f4f4fd;
+  color: var(--backgroundButton);
   font-size: 16px;
   font-family: Roboto;
   line-height: 24px;
   letter-spacing: 0.32px;
   padding: 40px 32px 164px 32px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
